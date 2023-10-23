@@ -1,0 +1,56 @@
+// @include h
+@mixin header ($fw: 700, $fs: 20px, $lh: normal) {
+    font-weight: $fw;
+    font-size: $fs;
+    line-height: $lh;
+}
+
+//form-width
+%form-width {
+    max-width: 275px;
+
+    @media (min-width: 768px) {
+        max-width: 480px;
+    };
+    
+    @media (min-width: 1280px) {
+        max-width: 600px;
+    };
+
+}
+
+
+// box_img
+%box_img {
+    position: relative;
+    overflow: hidden;
+}
+
+// img 
+%img-stretch {
+    max-width: none;
+    height: 100%;
+    position: absolute;
+    inset: 0;
+    object-fit: cover;
+}
+
+%img-fullwidth {
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+    vertical-align: top;
+}
+
+.flex-between {
+    display: flex;
+    justify-content: space-between;
+}
+
+.relative {
+    position: relative;
+}
+
+.vertical-center {
+    align-items: center;
+}

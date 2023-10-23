@@ -1,0 +1,130 @@
+@font-face {
+    font-family: 'Poppins';
+    src: url('../fonts/Poppins-Bold.woff2') format('woff2'),
+        url('../fonts/Poppins-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('../fonts/Poppins-Light.woff2') format('woff2'),
+        url('../fonts/Poppins-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('../fonts/Poppins-Regular.woff2') format('woff2'),
+        url('../fonts/Poppins-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+body {
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: normal;
+    color: $text-white;
+    background: $bg;
+
+    @media (min-width: 768px) {
+        font-size: 20px;
+    }
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.container {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 20px;
+
+    @media (min-width: 1280px) {
+        padding: 0 40px;
+    };
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: initial;
+}
+
+// @mixin header ($fw: 700, $fs: 20px, $lh: normal)
+h1 {
+    @include header;
+    color: $text-white;
+    margin: 0;
+
+    @media (min-width: 768px) {
+        @include header ($fs: 40px);
+    };
+}
+
+h2 {
+    @include header ($fw: 400);
+    color: $text-black;
+    white-space: nowrap;
+
+    @media (min-width: 768px) {
+        @include header ($fw: 400, $fs: 32px);
+    };
+
+    @media (min-width: 992px) {
+        @include header ($fw: 400, $fs: 64px);
+    };
+}
+
+h3 {
+    @include header;
+    color: $text-white;
+
+    @media (min-width: 768px) {
+        @include header ($fs: 32px);
+    };
+}
+
+h4 {
+    @include header ($fw: 400);
+
+    @media (min-width: 768px) {
+        @include header ($fw: 400, $fs: 32px);
+    };
+}
+
+h5 {
+    @include header ($fw: 400, $fs: 16px);
+
+    @media (min-width: 768px) {
+        @include header ($fw: 400, $fs: 20px);
+    };
+}
+
+h6 {
+    @include header ($fw: 400);
+    color: $text-white;
+
+    @media (min-width: 768px) {
+        @include header ($fw: 400, $fs: 32px);
+    };
+}
+
+
+
+
+

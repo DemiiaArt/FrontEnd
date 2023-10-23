@@ -1,0 +1,35 @@
+.form {
+    color: $text-white;
+    color: $gold;
+    border: 2px solid $gold;
+    padding: 20px;
+
+    @media (min-width: 1280px) {
+        padding: 20px 60px 60px;
+    }
+
+    &__text {
+        color: $text-white;
+        
+        p {
+            margin-bottom: 0;
+        }
+    };
+
+    legend {
+        font-size: 32px;
+        padding: 0 20px;
+
+        @media (min-width: 1280px) {
+            font-size: 56px;
+        }
+    };
+};
+
+.buy-button {
+    font-size: 28px;
+    padding: 0 40px;
+    background: $gold;
+    line-height: 150%;
+    border: 0;
+}

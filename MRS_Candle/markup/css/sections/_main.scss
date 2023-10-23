@@ -1,0 +1,117 @@
+.hero-section {
+    min-height: 400px;
+    padding: 20px;
+
+    @media (min-width: 768px) {
+        min-height: 500px;
+    };
+    
+    @media (min-width: 1280px) {
+        min-height: 70vh;
+    };
+
+
+    &__visual {
+        position: absolute;
+        z-index: -1;
+        top: 0;
+        right: 0;
+        height: 380px;
+        width: 100%;
+        background-image: url(../media/img/hero-img-min375px.png);
+        filter: blur(2px);
+        background-repeat: no-repeat;
+        background-attachment: scroll;
+        box-shadow: $photo-shadow;
+
+        @media (min-width: 480px) {
+            background-image: url(../media/img/hero-img-min480px.png);
+            filter: none;
+            width: 50vw;
+            right: 20px;
+        };
+
+        @media (min-width: 768px) {
+            background-image: url(../media/img/hero-img-min768px.jpg);
+            background-attachment: fixed;
+            filter: brightness(.7);
+            top: 0;
+            right: 0;
+            width: 80vw;
+            height: 480px;
+        };
+
+        @media (min-width: 992px) {
+            background-image: url(../media/img/hero-img-min992px.jpg);
+            width: 70vw;
+            filter: none;
+        };
+
+        @media (min-width: 1280px) {
+            background-image: url(../media/img/hero-img-min1280px.jpg);
+            width: 60vw;
+            height: 780px;
+            box-shadow: none;
+            top: 30px;
+        };
+    }
+
+    &__text {
+        @extend %form-width;
+
+        .buy-button {
+            float: right;
+            margin-top: 40px;
+        };
+
+        @media (min-width: 992px) {
+            margin-left: 60px;
+        };
+
+        @media (min-width: 1280px) {
+            margin-top: 100px;
+        }
+    }
+}
+
+.color-background {
+    position: absolute;
+    z-index: -2;
+    top: 80px;
+    right: 0;
+    left: 0;
+    height: 250px;
+    background: $green-grad;
+
+    @media (min-width: 768px) {
+        height: 400px;
+        top: 0px;
+    };
+
+    @media (min-width: 1280px) {
+        height: 600px;
+        top: 60px;
+    }
+};
+
+.devider {
+    display: flex;
+    gap: 40px;
+    justify-content: space-between;
+    align-items: center;
+
+    .line {
+        width: 100%;
+
+        &:before {
+            content: "";
+            height: 2px;
+            background: $text-black;
+            position: absolute;
+            top: 50%;
+            right: 0;
+            left: 0;
+            transform: translateY(-50%);
+        };
+    }
+}
