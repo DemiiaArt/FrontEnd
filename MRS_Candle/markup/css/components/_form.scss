@@ -32,4 +32,11 @@
     background: $gold;
     line-height: 150%;
     border: 0;
+    cursor: pointer;
+
+    &:hover {
+        background: #fff;
+        color: $gold;
+        box-shadow: $hover-shadow;
+    }
 }

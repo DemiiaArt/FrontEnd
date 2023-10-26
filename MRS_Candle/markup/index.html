@@ -29,7 +29,7 @@
         </header>
         <main id="main">
             <div class="hero-section relative">
-                <div class="color-background"></div>
+                <div class="color-background color-background--green"></div>
                 <div class="hero-section__visual"></div>
                 <div class="container">
                     <div class="hero-section__text">
@@ -49,9 +49,139 @@
                 <h2>Chose your candle</h2>
                 <div class="line relative"></div>
             </div>
+            <div class="cards container">
+                <swiper-container class="mySwiper" pagination="true" effect="coverflow" grab-cursor="true" centered-slides="true"
+                    slides-per-view="auto" coverflow-effect-rotate="50" coverflow-effect-stretch="0"
+                    coverflow-effect-depth="100" coverflow-effect-modifier="1" coverflow-effect-slide-shadows="true">
+                    <swiper-slide>
+                        <div href="#" class="card relative">
+                            <div class="card__visual">
+                                <img src="./media/img/Winter_forest.jpg" alt="Winter forest">
+                            </div>
+                            <div class="card__copy">
+                                <h4><a href="#">Winter forest</a></h4>
+                                <p>Pine needles, juniper berries and balsam fir create a scent reminiscent of a winter
+                                    forest</p>
+                                <span>250 ml</span>
+                            </div>
+                            <div class="card__footer">
+                                <a href="#"><span class="icon-bag"></span></a>
+                                <span>$29.99</span>
+                            </div>
+                        </div>
+                    </swiper-slide>
+                    <swiper-slide>
+                        <div href="#" class="card relative">
+                            <div class="card__visual">
+                                <img src="./media/img/Honey_vanilla.jpg" alt="Honey vanilla">
+                            </div>
+                            <div class="card__copy">
+                                <h4><a href="#">Honey vanilla</a></h4>
+                                <p>A sweet combination of vanilla cream and honey with a warm touch of musk</p>
+                                <span>250 ml</span>
+                            </div>
+                            <div class="card__footer">
+                                <a href="#"><span class="icon-bag"></span></a>
+                                <span>$29.99</span>
+                            </div>
+                        </div>
+                    </swiper-slide>
+                    <swiper-slide>
+                        <div href="#" class="card relative">
+                            <div class="card__visual">
+                                <img src="./media/img/Gingerbread.jpg" alt="Gingerbread">
+                            </div>
+                            <div class="card__copy">
+                                <h4><a href="#">Gingerbread</a></h4>
+                                <p>Sweet smell of crunchy, spicy cookies with lots of ginger and cinnamon</p>
+                                <span>250 ml</span>
+                            </div>
+                            <div class="card__footer">
+                                <a href="#"><span class="icon-bag"></span></a>
+                                <span>$29.99</span>
+                            </div>
+                        </div>
+                    </swiper-slide>
+                </swiper-container>
+            </div>
+            <div class="gift-section relative">
+                <div class="color-background color-background--red"></div>
+                <div class="gift-section__visual"></div>
+                <div class="container overflow-hidden">
+                    <div class="gift-section__text">
+                        <fieldset class="form">
+                            <legend>Gift box</legend>
+                            <div class="form__text">
+                                <h3>Free candle gift wrapping!</h3>
+                                <p>Your order will be delivered elegantly and ready to be gifted.</p>
+                            </div>
+                        </fieldset>
+                        <button class="buy-button">Buy Now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <ul class="list">
+                    <li class="icons-card">
+                        <h5>Natural soy wax</h5>
+                        <img src="./media/img/icon-Natural.png" alt="Natural soy wax">
+                    </li>
+                    <li class="icons-card">
+                        <h5>Сompletely handmade</h5>
+                        <img src="./media/img/icon-handmade.png" alt="Сompletely handmade">
+                    </li>
+                    <li class="icons-card hidden-1">
+                        <h5>No allergis</h5>
+                        <img src="./media/img/icon-Hypoallergenic.png" alt="Hypoallergenic">
+                    </li>
+                    <li class="icons-card">
+                        <h5>40+ hours of burning</h5>
+                        <img src="./media/img/icon-burning.png" alt="40+ hours of burning">
+                    </li>
+                    <li class="icons-card hidden-2">
+                        <h5>Fast order dispatch</h5>
+                        <img src="./media/img/icon-Fast.png" alt="Fast order dispatch">
+                    </li>
+                    <li class="icons-card">
+                        <h5>Rich aroma</h5>
+                        <img src="./media/img/icon-aroma.png" alt="Rich aroma">
+                    </li>
+                </ul>
+            </div>
+            <div class="devider">
+                <div class="line relative"></div>
+                <h2>Gallery</h2>
+                <div class="line relative"></div>
+            </div>
+            <div class="container">
+                <ul class="list gallery">
+                    <li>
+                        <div class="photo">
+                            <img src="./media/img/Photo-1.jpg" alt="photo-1">
+                        </div>
+                    </li>
+                    <li class="photo">
+                        <img src="./media/img/Photo-2.jpg" alt="photo-2">
+                    </li>
+                    <li class="photo">
+                        <img src="./media/img/Photo-3.jpg" alt="photo-3">
+                    </li>
+                    <li class="photo">
+                        <img src="./media/img/Photo-4.jpg" alt="photo-4">
+                    </li>
+                    <li class="photo">
+                        <img src="./media/img/Photo-5.jpg" alt="photo-5">
+                    </li>
+                    <li class="photo">
+                        <img src="./media/img/Photo-6.jpg" alt="photo-6">
+                    </li>
+                    
+                </ul>
+            </div>
         </main>
         <footer id="footer"></footer>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-element-bundle.min.js"></script>
 </body>
 
 </html>

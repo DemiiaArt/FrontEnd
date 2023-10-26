@@ -101,6 +101,7 @@ h3 {
 
 h4 {
     @include header ($fw: 400);
+    margin: 0 0 20px;
 
     @media (min-width: 768px) {
         @include header ($fw: 400, $fs: 32px);
@@ -109,6 +110,7 @@ h4 {
 
 h5 {
     @include header ($fw: 400, $fs: 16px);
+    margin: 0;
 
     @media (min-width: 768px) {
         @include header ($fw: 400, $fs: 20px);
