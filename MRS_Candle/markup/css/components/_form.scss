@@ -14,7 +14,11 @@
         p {
             margin-bottom: 0;
         }
-    };
+
+        .form-mail & {
+            padding: 0 0 40px;
+        }
+    }
 
     legend {
         font-size: 32px;
@@ -23,8 +27,33 @@
         @media (min-width: 1280px) {
             font-size: 56px;
         }
-    };
-};
+    }
+
+    [type = "email"] {
+        font-size: 20px;
+        width: 100%;
+        border: none;
+        
+        &::placeholder {
+            padding: 5px;
+            background: #ececec;
+            color: #646464;
+        }
+
+        &:invalid {
+            border: 1px solid red;
+        }
+
+        &:focus {
+            outline: 1px solid $gold;
+        }
+
+        &:enabled {
+            color: $gold;
+            background: $text-white;
+        }
+    }
+}
 
 .buy-button {
     font-size: 28px;
@@ -38,5 +67,41 @@
         background: #fff;
         color: $gold;
         box-shadow: $hover-shadow;
+    }
+}
+
+
+.form-mail {
+    text-align: center;
+
+    @media (min-width: 480px) {
+        text-align: start;
+        padding: 20px 40px;
+    }
+
+    .buy-button {
+        margin: 0 auto;
+
+        @media (min-width: 480px) {
+            float: right;
+        }
+    }
+
+    &__main {
+        @media (min-width: 768px) {
+            display: none;
+        }
+    }
+
+    &__footer {
+        display: none;
+
+        h6 {
+            color: $text-white;
+        }
+
+        @media (min-width: 768px) {
+            display: block;
+        }
     }
 }

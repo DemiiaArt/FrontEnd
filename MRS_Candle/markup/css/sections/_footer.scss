@@ -1,0 +1,90 @@
+#footer {
+    background: $green-grad;
+    min-height: 300px;
+    padding: 30px 0 40px;
+    margin-top: 50px;
+
+    @media (min-width: 768px) {
+        min-height: 400px;
+        padding: 50px 0 70px;
+    }
+    
+    @media (min-width: 992px) {
+        margin-top: 100px;
+    }
+
+    .flex-around {
+        display: block;
+
+        @media (min-width: 768px) {
+            display: flex;
+        }
+    }
+
+    .footer__copy {
+        position: absolute;
+        bottom: 20px;
+        right: 20px;
+        font-weight: 300;
+        font-size: 14px;
+        opacity: .2;
+        text-shadow: 1px 1px 2px $gold;
+
+        @media (min-width: 768px) {
+            right: auto;
+            left: 20px;
+        }
+    }
+}
+
+.footerText {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-top: 20px;
+
+    &__nav {
+        display: flex;
+        justify-content: space-around;
+
+
+        @media (min-width: 768px) {
+            justify-content: flex-start;
+            gap: 70px;
+        }
+
+        @media (min-width: 992px) {
+            gap: 150px;
+        }
+
+        h6 {
+            margin: 0 0 20px;
+        }
+
+        a {
+            color: inherit;
+            font-size: 14px;
+            font-weight: 300;
+
+            &:hover {
+                color: $gold;
+            }
+
+            @media (min-width: 768px) {
+                font-size: 16px;
+            }
+        }
+    }
+
+    &__contacts {
+        a {
+            color: inherit;
+        }
+    }
+}
+
+.footer-menu {
+    li {
+        padding: 7px 0;
+    }
+}

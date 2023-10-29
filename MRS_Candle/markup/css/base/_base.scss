@@ -121,8 +121,13 @@ h6 {
     @include header ($fw: 400);
     color: $text-white;
 
-    @media (min-width: 768px) {
-        @include header ($fw: 400, $fs: 32px);
+    .form-mail & {
+        color: $text-black;
+        margin: 0 0 20px;
+    }
+
+    @media (min-width: 992px) {
+        @include header ($fw: 400, $fs: 30px);
     };
 }
 
