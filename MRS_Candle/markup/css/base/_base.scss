@@ -32,6 +32,7 @@ body {
     line-height: normal;
     color: $text-white;
     background: $bg;
+    scroll-behavior: smooth;
 
     @media (min-width: 768px) {
         font-size: 20px;

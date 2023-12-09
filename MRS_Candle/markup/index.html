@@ -13,16 +13,16 @@
         <header id="header">
             <div class="container flex-between vertical-center relative">
                 <div class="logo">
-                    <img src="./media/img/logo.png" alt="logo Mrs Candle" width="224" height="60">
+                    <a href="#"><img src="./media/img/logo.png" alt="logo Mrs Candle" width="224" height="60"></a>
                 </div>
                 <nav class="hero-menu">
                     <div class="burger-navigation">
                         <span></span>
                     </div>
                     <ul class="menu">
-                        <li><a href="#">Products</a></li>
-                        <li><a href="#">Gallery</a></li>
-                        <li><a href="#">Contacts</a></li>
+                        <li><a href="#products">Products</a></li>
+                        <li><a href="#gallery">Gallery</a></li>
+                        <li><a href="#footer">Contacts</a></li>
                     </ul>
                 </nav>
             </div>
@@ -49,7 +49,7 @@
                 <h2>Chose your candle</h2>
                 <div class="line relative"></div>
             </div>
-            <div class="cards container">
+            <div id="products" class="cards container">
                 <swiper-container class="mySwiper" pagination="true" effect="coverflow" grab-cursor="true" centered-slides="true"
                     slides-per-view="auto" coverflow-effect-rotate="50" coverflow-effect-stretch="0"
                     coverflow-effect-depth="100" coverflow-effect-modifier="1" coverflow-effect-slide-shadows="true">
@@ -153,7 +153,7 @@
                 <h2>Gallery</h2>
                 <div class="line relative"></div>
             </div>
-            <div class="container">
+            <div id="gallery" class="container">
                 <div class="list gallery">
                     <div class="photo">
                         <img src="./media/img/Photo-1.jpg" alt="photo 1">
@@ -217,6 +217,12 @@
             </div>
             <span class="footer__copy">Designed by Demianenko Nataliia</span>
         </footer>
+        <div class="backdrop">
+            <div class="order-window">
+                <h2>Your order</h2>
+                
+            </div>
+        </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-element-bundle.min.js"></script>
 </body>
